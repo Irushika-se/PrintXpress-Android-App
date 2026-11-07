@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/lightGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header Banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/primaryColor"
+            android:padding="16dp"
+            android:fitsSystemWindows="true">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professional printing services at your fingertips."
+                android:textColor="#BBDEFB"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <!-- Row 1 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="14dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp" android:layout_height="116dp"
+                    android:layout_weight="1" android:layout_marginEnd="7dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="3dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:id="@+id/btnBrowseProducts"
+                        android:orientation="vertical" android:gravity="center"
+                        android:background="@color/white">
+                        <FrameLayout android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_icon_circle">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_browse_products"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Browse Products" android:textSize="13sp"
+                            android:textColor="@color/textPrimary" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp" android:layout_height="116dp"
+                    android:layout_weight="1" android:layout_marginStart="7dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="3dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:id="@+id/btnMyOrders"
+                        android:orientation="vertical" android:gravity="center"
+                        android:background="@color/white">
+                        <FrameLayout android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_icon_circle">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_orders"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="My Orders" android:textSize="13sp"
+                            android:textColor="@color/textPrimary" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="14dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp" android:layout_height="116dp"
+                    android:layout_weight="1" android:layout_marginEnd="7dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="3dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:id="@+id/btnDesignGallery"
+                        android:orientation="vertical" android:gravity="center"
+                        android:background="@color/white">
+                        <FrameLayout android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_icon_circle">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_design_gallery"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Design Gallery" android:textSize="13sp"
+                            android:textColor="@color/textPrimary" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp" android:layout_height="116dp"
+                    android:layout_weight="1" android:layout_marginStart="7dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="3dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:id="@+id/btnPromotions"
+                        android:orientation="vertical" android:gravity="center"
+                        android:background="@color/white">
+                        <FrameLayout android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_icon_circle">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_promotions"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Promotions" android:textSize="13sp"
+                            android:textColor="@color/textPrimary" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 3 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp" android:layout_height="116dp"
+                    android:layout_weight="1" android:layout_marginEnd="7dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="3dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:id="@+id/btnNotifications"
+                        android:orientation="vertical" android:gravity="center"
+                        android:background="@color/white">
+                        <FrameLayout android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_icon_circle">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_notifications"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Notifications" android:textSize="13sp"
+                            android:textColor="@color/textPrimary" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp" android:layout_height="116dp"
+                    android:layout_weight="1" android:layout_marginStart="7dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="3dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:id="@+id/btnPrintGuidelines"
+                        android:orientation="vertical" android:gravity="center"
+                        android:background="@color/white">
+                        <FrameLayout android:layout_width="52dp" android:layout_height="52dp"
+                            android:background="@drawable/bg_icon_circle">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_guidelines"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Guidelines &amp; FAQs" android:textSize="13sp"
+                            android:textColor="@color/textPrimary" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <Button android:id="@+id/btnProfile"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="MY PROFILE" android:backgroundTint="@color/primaryColor"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_profile"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button android:id="@+id/btnLogout"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="Logout" android:backgroundTint="@color/error"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

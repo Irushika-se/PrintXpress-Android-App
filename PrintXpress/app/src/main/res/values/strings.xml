@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PrintXpress</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="place_order">Place Order</string>
+    <string name="my_orders">My Orders</string>
+    <string name="profile">Profile</string>
+
+    <string name="label_order_number">Order %1$d</string>
+    <string name="label_product">Product: %1$s</string>
+    <string name="label_quantity">Quantity: %1$d</string>
+    <string name="label_total_rs">Total: Rs. %1$s</string>
+    <string name="label_rs_amount">Rs. %1$s</string>
+    <string name="label_delivery">Delivery: %1$s</string>
+    <string name="label_status">Status: %1$s</string>
+    <string name="label_date">Date: %1$s</string>
+    <string name="label_scheduled_for">Scheduled for: %1$s</string>
+    <string name="label_not_yet_scheduled">Scheduled for: Not yet scheduled</string>
+    <string name="label_specifications">Specifications: %1$s</string>
+    <string name="specifications_none">None</string>
+    <string name="label_unit_price_rs">Unit Price: Rs. %1$s</string>
+    <string name="label_category">Category: %1$s</string>
+    <string name="label_amount_to_pay">Amount to Pay: Rs. %1$s</string>
+    <string name="cash_on_delivery">\uD83D\uDCB5  Cash on Delivery</string>
+    <string name="cash_on_pickup">\uD83D\uDCB5  Cash on Pickup</string>
+    <string name="cash_on_delivery_pickup">\uD83D\uDCB5  Cash on Delivery / Pickup</string>
+    <string name="design_selected">Design Selected</string>
+    <string name="cannot_reschedule">Cannot Reschedule</string>
+    <string name="cannot_cancel">Cannot Cancel</string>
+    <string name="status_cancelled">Status: Cancelled</string>
+</resources>

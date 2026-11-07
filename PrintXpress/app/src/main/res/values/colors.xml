@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#00897B</color>
+    <color name="primaryDark">#005F56</color>
+    <color name="accent">#26C6DA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightGray">#E8F5F3</color>
+    <color name="textPrimary">#003D35</color>
+    <color name="textSecondary">#4A8C84</color>
+    <color name="divider">#B2DFDB</color>
+    <color name="success">#2E7D32</color>
+    <color name="error">#B71C1C</color>
+    <color name="teal">#00ACC1</color>
+    <color name="skyBlue">#0277BD</color>
+</resources>

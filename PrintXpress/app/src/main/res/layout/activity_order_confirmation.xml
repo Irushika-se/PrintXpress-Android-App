@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E8F5F3">
+
+    <!-- Header Banner -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:fitsSystemWindows="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/success" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Confirmed"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Great choice! We'll handle the rest"
+                android:textColor="#C8E6C9"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp" app:cardElevation="4dp" android:layout_marginBottom="20dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+
+                <TextView android:id="@+id/tvOrderId"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="18sp" android:textStyle="bold" android:textColor="@color/primaryColor"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView android:id="@+id/tvProduct" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="15sp"
+                    android:textColor="@color/textPrimary" android:layout_marginBottom="8dp"/>
+
+                <TextView android:id="@+id/tvTotal" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="16sp"
+                    android:textColor="@color/accent" android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView android:id="@+id/tvDelivery" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="14sp"
+                    android:textColor="@color/textSecondary" android:layout_marginBottom="8dp"/>
+
+                <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="14sp"
+                    android:textColor="@color/success"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button android:id="@+id/btnViewOrders"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="VIEW MY ORDERS" android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/white" android:layout_marginBottom="12dp"/>
+
+        <Button android:id="@+id/btnGoHome"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="GO HOME" android:backgroundTint="@color/textSecondary"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

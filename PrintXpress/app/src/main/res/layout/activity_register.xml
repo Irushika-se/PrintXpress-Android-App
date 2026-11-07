@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start your printing journey today"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText android:id="@+id/etName"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Full Name" android:inputType="textPersonName"
+            android:background="@color/white" android:padding="14dp" android:layout_marginBottom="12dp"/>
+
+        <EditText android:id="@+id/etEmail"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Email Address" android:inputType="textEmailAddress"
+            android:background="@color/white" android:padding="14dp" android:layout_marginBottom="12dp"/>
+
+        <EditText android:id="@+id/etPhone"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Phone Number (10 digits)" android:inputType="phone"
+            android:background="@color/white" android:padding="14dp" android:layout_marginBottom="12dp"/>
+
+        <EditText android:id="@+id/etPassword"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Password (min 6 characters)" android:inputType="textPassword"
+            android:background="@color/white" android:padding="14dp" android:layout_marginBottom="12dp"/>
+
+        <EditText android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Confirm Password" android:inputType="textPassword"
+            android:background="@color/white" android:padding="14dp" android:layout_marginBottom="12dp"/>
+
+        <EditText android:id="@+id/etAddress"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Delivery Address" android:inputType="textMultiLine"
+            android:lines="2" android:background="@color/white" android:padding="14dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button android:id="@+id/btnRegister"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="REGISTER" android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/white" android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvLogin"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="@color/primaryColor"
+            android:layout_gravity="center" android:layout_marginTop="16dp" android:padding="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
